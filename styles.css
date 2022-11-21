@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Waiting+for+the+Sunrise&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffe049;
+}
+.pagewrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    padding-right:1rem;
+    padding-left: 1rem;
+}
+.navigation{
+    background-color: #ffd07b;
+    padding: 1rem;
+    border-bottom-right-radius:1rem;
+    border-bottom-left-radius:1rem;
+}
+.nav-repo{
+    text-align: right;
+}
+.nav-link{
+    font-size: 2em;
+    color:#45494e;
+}
+.nav-title{
+    color:#C67547;
+    font-size:1.5em;
+    margin:10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Waiting for the Sunrise',cursive;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+    flex-grow:1;
+}
+.content-title{
+    margin-top:10vh;
+    text-align: center;
+}
+.content-title h3{
+    font-family: monospace;
+    font-size:xx-large;
+}
+.content-translator{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    margin: 1rem;
+    padding:3rem 2rem;
+    border-radius: 20px;
+    box-shadow: -4px 3px 19px 2px #00494d;
+    width: 80%;
+}
+.content-input{
+    flex: 33%;
+    background-color: #ffd07b;
+    padding:3rem 1rem;
+    margin: 1rem;
+    border-radius:10px;
+}
+.input{
+    text-align: left;
+    color: #5e7a7d;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+input{
+    width: 90%;
+    margin: 0.4rem;
+    padding: 0.3125rem 0.75rem;
+    background-color: #f4fafa;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: monospace;
+    color: #00494d;
+    text-align: end;
+}
+.content-translate{ 
+    font-family: 'Montserrat', sans-serif;
+    color: #84721e;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 15px;
+    height: 50px;
+    width: 120px;
+    background-color: #f9f871;
+    box-shadow: 4px 4px #4a4be7;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.output{
+    flex: 33%;
+    padding:3rem 1rem;
+    background-color: #ffd07b;
+    margin:1rem;
+    color:#84721e;
+    border-radius:10px;
+}
+.footer{
+    background-color: #ffd07b;
+    padding:1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top:1rem;
+}
+.footer-tagline{
+    text-align:center;
+    color:#C67547;
+    font-size:1.1rem;
+    margin:10px;
+    font-family: 'Raleway',sans-serif;
+}
+.footer-socials{
+    list-style: none;
+    text-align: center;
+    margin:0 0.5rem;
+}
+.footer-links{
+    text-decoration: none;
+}
+.footer-inline{
+    display: inline;
+    padding:0 10px;
+}
+
+footer i{
+   font-size: 2em;
+   color:#45494e;
+}
+
+@media screen and (max-width:991px){
+    .content-translator{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .content-input,.output{
+        margin: 1rem;
+    }
+    .action-center{
+        align-self: center;
+    }
+    input{
+        width: auto;
+        margin-left:5px;
+        font-size: 1rem;
+    }
+}
